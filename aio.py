@@ -125,8 +125,17 @@ try:
         st.markdown("Don't have an API key? Generate [Here](https://aistudio.google.com/app/apikey)")
 
     if page == "Home":
-        st.header("Welcome to the AI Tools Application")
-        st.write(""" Image captioning is the process of generating a textual description or caption that accurately and concisely describes the content and context of a given image. This pertains to the unification of the approaches of computer vision and natural language processing in order to analyse visual data. """)
+        st.header("Welcome to the Image Captioning Application")
+        st.write(""" Image captioning is the process of generating a textual description or caption that accurately and concisely describes the content and context of a given image. This pertains to the unification of the approaches of computer vision and natural language processing in order to analyse visual data. 
+        
+        Image captioning typically involves the following steps
+
+        :
+
+        Image Feature Extraction: Features such as shapes, colors, textures, and objects are extracted from the image.
+        Language Modeling: A language model is used to generate a sequence of words that describe the image features.
+        Caption Generation: The generated words are assembled into a coherent and grammatically correct caption.
+        """)
         images = ["img1.jpeg", "img2.jpeg", "img3.jpeg"]
         cols = st.columns(3)
     
