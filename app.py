@@ -3,7 +3,7 @@ from PIL import Image
 import google.generativeai as genai
 
 # Configure Google API key directly
-API_KEY = os.getenv("GENAI_API_KEY")
+API_KEY = st.secrets["GENAI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # Initialize session state
