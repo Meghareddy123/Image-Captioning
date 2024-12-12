@@ -25,10 +25,10 @@ try:
 
     with st.sidebar:
         st.header("Navigation")
-        page = st.selectbox("Go to", ["Home", "ChatBot", "Image Captioning"])
+        page = st.selectbox("Go to", ["Home", "ChatBot", "Image Captioning", "About"])
 
     if page == "Home":
-        st.header("Welcome to the AI Tools Application")
+        st.header("Welcome to the AI Image Captioning Application")
         st.write(""" Image captioning is the process of generating a textual description or caption that accurately and concisely describes the content and context of a given image. This pertains to the unification of the approaches of computer vision and natural language processing in order to analyse visual data. 
         
         Image captioning typically involves the following steps:
@@ -79,6 +79,18 @@ try:
                 st.write(f"Tags: {tags.text}")
             except Exception as e:
                 st.error(f"Failed to generate caption due to: {str(e)}")
+
+    elif page == "About":
+        st.write("""
+            This Project is done by :
+
+                1. Megha M A 
+                2. Lekhana M S
+                3. Likhitha M S
+                4. Sanjana M 
+            
+            Students of 5th Sem AI&ML, BGSCET Bengaluru.  
+            """)
 
 except Exception:
     st.error("OOPS! SOMETHING WENT WRONG.")
