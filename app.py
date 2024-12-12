@@ -91,6 +91,8 @@ try:
             
             Students of 5th Sem AI&ML, BGSCET Bengaluru.  
             """)
+st.write("---")
+st.markdown("<p style='text-align: center;'>© 2024 AI Image Captioning . All rights reserved.</p>", unsafe_allow_html=True) 
 
 except Exception:
     st.error("OOPS! SOMETHING WENT WRONG.")
